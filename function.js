@@ -63,3 +63,24 @@ function calcularareaTriangulo(){
     const  area = areaTriangulo(base,altura)
     alert(`el area del triangulo es ${area}`)
 }   
+
+function calculadiametroCirculo (){
+    const intputradio = document.getElementById("radio");
+    const radio = Number(intputradio.value);
+    const diametro = diametroCirculo(radio);
+    alert(`el diametro del circulo es: ${diametro}`)
+}
+
+function calculaperimetroCirculo (){
+    const intputradio = document.getElementById("radio");
+    const radio = Number(intputradio.value);
+    const perimetro = perimetroCirculo(radio);
+    alert(`el perimetro del circulo es: ${perimetro}`)
+}
+
+function calculaareaCirculo(){
+    const intputradio = document.getElementById("radio");
+    const radio = Number(intputradio.value);
+    const area = areaCirculo(radio);
+    alert(`El area del circulo es ${area}`)
+}
