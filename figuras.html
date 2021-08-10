@@ -7,12 +7,57 @@
     <title>Figuras geometricas</title>
     
     
+    
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
-    <script src="./figuras.js"></script>    
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>1er taller del curso practico de Java scrip</p>
+    </header>  
+
+    <section>
+
+        <h2>calcula el area y el perimetro de un cuadrado</h2>
+        <form>
+            <label for="InputCuadrado">
+                escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number" />
+
+            <button type="button" onclick="calcularperimetroCuadrado()">
+                calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularareaCuadrado()">
+                calcular el area
+            </button>
+            
+        </form>
+    </section>
+
+    <section > 
+        <h2>Calcula el area y el perimetro de tu Triangulo</h2>
+        <form id="lista">
+            <label for="Inputlado1">Escribe cuanto mide el lado1 del triangulo</label>
+            <input  id="Inputlado1" type="number" />
+            
+            <label for="Inputlado2">Escribe cuanto mide el lado2 del triangulo</label>
+            <input id="Inputlado2" type="number" />
+
+            <label for="Base">Escribe cuanto mide la base del triangulo</label>
+            <input id="Base" type="number">
+
+            <label for="Altura">Escirbe la altura del triangulo</label>
+            <input id="Altura"  type="number" /> 
+
+            <button type="button" onclick="calculaperimetroTriangulo()">calcular el perimetro</button>
+            <button type="button" onclick="calcularareaTriangulo()">calcular el Area </button>
+
+        </form>
+
+    </section>
+
     
+
+    <script src="/function.js"></script>
 </body>
 </html>
