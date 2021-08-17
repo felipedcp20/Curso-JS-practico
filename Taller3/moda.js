@@ -16,7 +16,8 @@ const conteonumero = {
 };
 
 lista.map(
-    function(numero){
+
+    function(numero){Object.entries(conteonumero)
         if (conteonumero[numero]){
             conteonumero[numero] +=1;
         }else {
@@ -27,4 +28,11 @@ lista.map(
     
 
 
-console.log(conteonumero)
+const Objectarra1 = Object.entries(conteonumero)
+
+const orderarray = Objectarra1.sort (
+    function (value1,value2){
+        return value1[1] - value2[1];
+    })
+
+console.log(`la moda de la lista es ${orderarray[orderarray.length - 1]}`)
